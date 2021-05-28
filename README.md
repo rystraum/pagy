@@ -87,13 +87,13 @@ Paginate your collection in some controller:
 Render the navigation links with a super-fast helper in some view:
 
 ```erb
-<%== pagy_nav(@pagy) %>
+<%= pagy_nav(@pagy) %>
 ```
 
 Or - if you prefer - render the navigation links with a template:
 
 ```erb
-<%== render partial: 'pagy/nav', locals: {pagy: @pagy} %>
+<%= render partial: 'pagy/nav', locals: {pagy: @pagy} %>
 ```
 
 However, Pagy goes far beyond the classic pagination above. You can also use fast client-side rendering, headers pagination or integrate it with javascript frameworks (e.g. `vue.js`, `react`, ...) by just requiring the extras that you need.
